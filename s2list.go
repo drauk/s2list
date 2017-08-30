@@ -50,7 +50,7 @@ package s2list
 // import "errors"
 // import "net/http"
 
-import "localhost/elist"
+import "github.com/drauk/elist"
 
 // Bad kludge. Useful for tracing functions. Assumes HTML formatting.
 // var W_kludge_s2list io.Writer;
