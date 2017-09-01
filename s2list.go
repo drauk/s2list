@@ -1,5 +1,5 @@
-// src/go/s2list.go   2017-8-30   Alan U. Kennington.
-// $Id: s2list.go 46539 2017-08-29 14:28:54Z akenning $
+// src/go/s2list.go   2017-9-1   Alan U. Kennington.
+// $Id: s2list.go 46551 2017-09-01 04:37:04Z akenning $
 // Singly linked first/last-list for first test program for learning "go".
 // Using version go1.1.2.
 /*-------------------------------------------------------------------------
@@ -51,11 +51,6 @@ package s2list
 // import "net/http"
 
 import "github.com/drauk/elist"
-
-// Bad kludge. Useful for tracing functions. Assumes HTML formatting.
-// var W_kludge_s2list io.Writer;
-// Bad kludge. Useful for tracing functions. Assumes HTML formatting.
-// var W_kludge_s2list_on bool = false;
 
 //=============================================================================
 //=============================================================================
