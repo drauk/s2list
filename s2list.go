@@ -1,4 +1,4 @@
-// src/go/s2list.go   2017-9-1   Alan U. Kennington.
+// src/go/s2list.go   2017-9-2   Alan U. Kennington.
 // $Id: s2list.go 46551 2017-09-01 04:37:04Z akenning $
 // Singly linked first/last-list for first test program for learning "go".
 // Using version go1.1.2.
@@ -35,10 +35,10 @@ List_iter::Next
 -------------------------------------------------------------------------*/
 
 /*
-The s2list package implements singly-linked lists of nodes which have
-parent-pointers to the containing list. This helps to ensure integrity, for
-example by preventing a node from being an element of the same list twice, or an
-element of two different lists simultaneously.
+The s2list package implements singly-linked lists. Every node has a
+parent-pointer to indicate which list it is contained in. This helps to ensure
+structural integrity. For example, a node is preventing from being an element of
+the same list twice, or an element of two different lists simultaneously.
 */
 package s2list
 
