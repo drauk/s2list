@@ -1,5 +1,5 @@
-// src/go/s2list.go   2017-9-2   Alan U. Kennington.
-// $Id: s2list.go 46551 2017-09-01 04:37:04Z akenning $
+// src/go/s2list.go   2017-9-10   Alan U. Kennington.
+// $Id: s2list.go 46587 2017-09-10 03:12:44Z akenning $
 // Singly linked first/last-list for first test program for learning "go".
 // Using version go1.1.2.
 /*-------------------------------------------------------------------------
@@ -100,16 +100,16 @@ func (p *List_node) GetNext() (*List_node, error) {
     return p.next, nil
 }   // End of function List_node::GetNext.
 
+/*
+List_node::unlink() is a private member function for internal use in this
+package.
+This should only be called when a node is popped/removed/cleared from a list.
+The value payload is unaffected.
+*/
 func (p *List_node) unlink() error {
     //----------------------//
     //   List_node::unlink  //
     //----------------------//
-    /*------------------------------------------------------------------------------
-      List_node::unlink()
-      Private member function for internal use in this package.
-      This should only be called when a node is popped/removed/cleared from a list.
-      The value payload is unaffected.
-      ------------------------------------------------------------------------------*/
     if p == nil {
         return elist.New("List_node::unlink: p == nil")
     }
