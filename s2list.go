@@ -1,5 +1,5 @@
 // src/go/s2list.go   2017-9-10   Alan U. Kennington.
-// $Id: s2list.go 46587 2017-09-10 03:12:44Z akenning $
+// $Id: src/go/s2list.go b26e282a30 2017-09-10 03:12:44Z Alan U. Kennington $
 // Singly linked first/last-list for first test program for learning "go".
 // Using version go1.1.2.
 /*-------------------------------------------------------------------------
